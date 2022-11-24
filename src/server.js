@@ -49,7 +49,7 @@ app.use(
     secret: process.env.SECRET,
     resave: true,
     saveUninitialized: true,
-    cookie: { maxAge: 600000 }, //10 min.
+    cookie: { maxAge: 600000 },
   })
 );
 
@@ -125,8 +125,6 @@ app.use(
 app.all("*", (req, res) => {
   res.status(404).json({ error: "ruta no existente" });
 });
-
-/* --------------- Leer el puerto por consola o setear default -------------- */
 
 const options = {
   alias: {

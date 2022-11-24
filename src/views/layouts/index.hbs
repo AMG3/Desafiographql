@@ -5,18 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>MyAPI - Demarchi</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+        <title></title>
+        
+
         <link href="/styles.css" rel="stylesheet" />
         
     </head>
     <body>
         <div class="d-flex" id="wrapper">
-            <!-- Sidebar-->
+           
             <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="sidebar-heading border-bottom bg-light" title="Esteban Demarchi's API">API Productos</div>
+           
                 <div class="list-group list-group-flush">
                     {{>navlinks}}
                 </div>
@@ -31,9 +30,9 @@
                             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                                 <li class="nav-item active nav-link">
                                 {{#if status}}
-                                    🟢 Conectado
+                                    Conectado
                                 {{else}}
-                                    🔴 Desconectado
+                                    Desconectado
                                 {{/if}}
                                 </li>
                                 <li class="nav-item active"><a class="nav-link" href="/api/usuario">Home</a></li>   
